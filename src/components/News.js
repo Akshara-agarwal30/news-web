@@ -1,8 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import NewsItem from './NewsItem'
 import Spinner from './Spinner';
-import PropTypes from 'prop-types'
-import InfiniteScroll from "react-infinite-scroll-component";
+
 
 
 const News=(props)=>  {
@@ -67,7 +66,7 @@ const update=async()=>
 }
 
 useEffect(() => {
-  update()
+  update();
 }, []);
 //async componentDidMount(){  /* we are doing this cux upr articles mei jo likha hai agar hum vo use krenge toh 10 saal baad bhi same
  // news show hogi. so we are using the api endpoint to news api wali site pe di hai and usse data fetch krke vo state se set kar rahe hai articles mei */
